@@ -30,7 +30,8 @@ This [Helm](https://github.com/kubernetes/helm) chart installs [HertzBeat](https
 ### Add Helm repository
 
 ```bash
-helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo add hertzbeat https://charts.hertzbeat.com
+helm repo update
 ```
 
 ### Configure the chart
@@ -71,14 +72,14 @@ If HertzBeat is deployed behind the proxy, set it as the URL of proxy.
 
 Install the HertzBeat helm chart with a release name `my-release`:
 ```bash
-helm install hertz tancloud/hertzbeat
+helm install hertzbeat tancloud/hertzbeat
 ```
 
 ## Uninstallation
 
-To uninstall/delete the `hertz` deployment:
+To uninstall/delete the `hertzbeat` deployment:
 ```bash
-helm uninstall hertz
+helm uninstall hertzbeat
 ```
 
 ## Configuration
