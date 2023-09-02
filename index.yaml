@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  hertzbeat:
+  - apiVersion: v2
+    appVersion: v1.4.0
+    created: "2023-09-02T16:46:48.995176+08:00"
+    description: An open-source, real-time monitoring system with custom monitoring,
+      high performance cluster and agentless capabilities.
+    digest: 9560978c0eebbbbdc7116d2638acd69c0f9fee6d18e188e599ccc5358f0b9ae2
+    home: https://hertzbeat.com/
+    icon: https://raw.githubusercontent.com/dromara/hertzbeat/master/home/static/img/hertzbeat-logo.png
+    maintainers:
+    - email: tomsun28@outlook.com
+      name: tom
+    name: hertzbeat
+    sources:
+    - https://github.com/dromara/hertzbeat
+    type: application
+    urls:
+    - https://github.com/tomsun28/hertzbeat-helm-chart/hertzbeat-1.4.0.tgz
+    version: 1.4.0
+generated: "2023-09-02T16:46:48.994222+08:00"
