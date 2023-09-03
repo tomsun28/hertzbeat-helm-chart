@@ -5,3 +5,6 @@ chart-dirs:
 helm-extra-args: --timeout 600s
 pages-branch: main
 pages-index-path: docs/index.yaml
+package-path: docs
+index-path: docs/index.yaml
+pr:
