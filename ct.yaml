@@ -3,3 +3,5 @@ target-branch: main
 chart-dirs:
   - charts
 helm-extra-args: --timeout 600s
+pages-branch: main
+pages-index-path: docs/index.yaml
