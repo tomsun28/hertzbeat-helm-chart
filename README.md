@@ -1,5 +1,10 @@
 # Helm Chart for HertzBeat
 
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/hertzbeat)](https://artifacthub.io/packages/search?repo=hertzbeat)
+
+<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/hertzbeat/hertzbeat" data-theme="light" data-header="true" data-stars="true" data-responsive="false"><blockquote><p lang="en" dir="ltr"><b>hertzbeat</b>: An open-source, real-time monitoring system with custom monitoring, high performance cluster and agentless capabilities.</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/hertzbeat/hertzbeat">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+
+
 ## What is HertzBeat?
 
 > An open-source, real-time monitoring system with custom monitoring, high performance cluster and agentless capabilities. | 易用友好的开源实时监控告警系统，无需Agent，高性能集群，强大自定义监控能力.
@@ -30,7 +35,7 @@ This [Helm](https://github.com/kubernetes/helm) chart installs [HertzBeat](https
 ### Add Helm repository
 
 ```bash
-helm repo add tancloud https://charts.hertzbeat.com
+helm repo add hertzbeat https://charts.hertzbeat.com/
 helm repo update
 ```
 
@@ -72,7 +77,7 @@ If HertzBeat is deployed behind the proxy, set it as the URL of proxy.
 
 Install the HertzBeat helm chart with a release name `my-release`:
 ```bash
-helm install hertzbeat tancloud/hertzbeat
+helm install hertzbeat hertzbeat/hertzbeat
 ```
 
 ## Uninstallation
