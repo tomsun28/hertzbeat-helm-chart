@@ -149,4 +149,11 @@ The following table lists the configurable parameters of the HertzBeat chart and
 [resources]: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 [hertzbeat]: https://github.com/dromara/hertzbeat/
 [artifacthub]: https://artifacthub.io/
-[helm]: https://helm.sh/  
+[helm]: https://helm.sh/
+
+
+### Build Pages
+
+1. `helm package charts/* -d docs`
+2. `helm repo index docs`
+3. `commit and push change`
