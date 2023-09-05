@@ -3,10 +3,10 @@ entries:
   hertzbeat:
   - apiVersion: v2
     appVersion: v1.4.0
-    created: "2023-09-04T15:12:17.103916+08:00"
+    created: "2023-09-05T15:02:06.42558+08:00"
     description: An open-source, real-time monitoring system with custom monitoring,
       high performance cluster and agentless capabilities.
-    digest: 061e04a86aa97cdf06b173857edce3118d047976aa79107823be7d552bfdea8c
+    digest: 28c57966f7c112e3409357cd358d92b45a9ab22058e8a031e4ad017af9acbc4b
     home: https://hertzbeat.com/
     icon: https://raw.githubusercontent.com/dromara/hertzbeat/master/home/static/img/hertzbeat-logo.png
     maintainers:
@@ -20,4 +20,4 @@ entries:
     urls:
     - hertzbeat-1.4.0.tgz
     version: 1.4.0
-generated: "2023-09-04T15:12:17.102563+08:00"
+generated: "2023-09-05T15:02:06.424582+08:00"
