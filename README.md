@@ -165,3 +165,11 @@ The following table lists the configurable parameters of the HertzBeat chart and
 1. `helm package charts/* -d docs`
 2. `helm repo index docs`
 3. `commit and push change`
+
+
+### Build Local
+
+1. `cd charts`
+2. `helm template --debug hertzbeat`
+3. `helm upgrade --install demo ./hertzbeat`
+4. `helm uninstall demo`
