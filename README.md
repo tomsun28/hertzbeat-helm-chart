@@ -7,18 +7,19 @@
 
 ## What is HertzBeat?
 
-> An open-source, real-time monitoring system with custom monitoring, high performance cluster and agentless capabilities. | 易用友好的开源实时监控告警系统，无需Agent，高性能集群，强大自定义监控能力.
+[HertzBeat](https://github.com/dromara/hertzbeat) is an open source, real-time monitoring system with custom monitoring, high performance cluster, prometheus-compatible and agentless capabilities.
 
 ### Features
 
-* Combines **monitoring, alarm, and notification** features into one platform, and supports monitoring for web service, database, os, middleware, cloud-native, network and more.
-* Easy to use and agentless, offering full web-based operations for monitoring and alerting with just a few clicks, all at zero learning cost.
-* Makes protocols such as `Http, Jmx, Ssh, Snmp, Jdbc` configurable, allowing you to collect any metrics by simply configuring the template `YML` file online. Imagine being able to quickly adapt to a new monitoring type like K8s or Docker simply by configuring online with HertzBeat.
+* Combines **monitoring, alarm, and notification** features into one platform, and supports monitoring for web service, program, database, cache, os, webserver, middleware, bigdata, cloud-native, network, custom and more.
+* Easy to use and agentless, web-based and with one-click monitoring and alerting, zero learning curve.
+* Makes protocols such as `Http, Jmx, Ssh, Snmp, Jdbc, Prometheus` configurable, allowing you to collect any metrics by simply configuring the template `YML` file online. Imagine being able to quickly adapt to a new monitoring type like K8s or Docker simply by configuring online with HertzBeat.
+* Compatible with the `Prometheus` ecosystem and more, can monitoring what `Prometheus` can monitoring with few clicks on webui.
 * High performance, supports horizontal expansion of multi-collector clusters, multi-isolated network monitoring and cloud-edge collaboration.
 * Provides flexible alarm threshold rules and timely notifications delivered via  `Discord` `Slack` `Telegram` `Email` `Dingtalk` `WeChat` `FeiShu` `Webhook` `SMS` `ServerChan`.
 
 
-> HertzBeat's powerful customization, multi-type support, high performance, easy expansion, and low coupling, aims to help developers and teams quickly build their own monitoring system.      
+> HertzBeat's powerful customization, multi-type support, high performance, easy expansion, and low coupling, aims to help users quickly build their own monitoring system.      
 > We also provide **[SaaS Monitoring Cloud](https://console.tancloud.cn)**, users no longer need to deploy a cumbersome monitoring system to monitor their resources. **[Get started online for free](https://console.tancloud.cn)**.
 
 ## Helm Chart for HertzBeat
