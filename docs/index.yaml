@@ -2,8 +2,27 @@ apiVersion: v1
 entries:
   hertzbeat:
   - apiVersion: v2
+    appVersion: v1.4.4
+    created: "2024-01-12T10:43:44.097112+08:00"
+    description: An open-source, real-time monitoring system with custom monitoring,
+      high performance cluster and agentless capabilities.
+    digest: edd04182f8383c9da9d6e9235f2687b6fbba22c1895fa9c9583ccefe48c0f025
+    home: https://hertzbeat.com/
+    icon: https://raw.githubusercontent.com/dromara/hertzbeat/master/home/static/img/hertzbeat-logo.png
+    maintainers:
+    - email: tomsun28@outlook.com
+      name: tom
+    name: hertzbeat
+    sources:
+    - https://github.com/dromara/hertzbeat
+    - https://charts.hertzbeat.com
+    type: application
+    urls:
+    - hertzbeat-1.4.4.tgz
+    version: 1.4.4
+  - apiVersion: v2
     appVersion: v1.4.3
-    created: "2023-12-11T14:28:59.144969+08:00"
+    created: "2024-01-12T10:43:44.096605+08:00"
     description: An open-source, real-time monitoring system with custom monitoring,
       high performance cluster and agentless capabilities.
     digest: 0f5b2e23d2f234b3bcf0e0ac9fe46cfb0713d6721972a43c4ae61d72c773929a
@@ -22,7 +41,7 @@ entries:
     version: 1.4.3
   - apiVersion: v2
     appVersion: v1.4.2
-    created: "2023-12-11T14:28:59.144268+08:00"
+    created: "2024-01-12T10:43:44.095945+08:00"
     description: An open-source, real-time monitoring system with custom monitoring,
       high performance cluster and agentless capabilities.
     digest: a6b0fbe036195d93cdb9ea4a3f46fb8866505c2593fc34a5d787273aea501c46
@@ -41,7 +60,7 @@ entries:
     version: 1.4.2
   - apiVersion: v2
     appVersion: v1.4.1
-    created: "2023-12-11T14:28:59.143585+08:00"
+    created: "2024-01-12T10:43:44.092379+08:00"
     description: An open-source, real-time monitoring system with custom monitoring,
       high performance cluster and agentless capabilities.
     digest: 470d5bb6be40b59c1011a1bde12225507dabd7dcad13887dfbf73a0b1bf32dd2
@@ -60,7 +79,7 @@ entries:
     version: 1.4.1
   - apiVersion: v2
     appVersion: v1.4.0
-    created: "2023-12-11T14:28:59.14284+08:00"
+    created: "2024-01-12T10:43:44.091723+08:00"
     description: An open-source, real-time monitoring system with custom monitoring,
       high performance cluster and agentless capabilities.
     digest: 28c57966f7c112e3409357cd358d92b45a9ab22058e8a031e4ad017af9acbc4b
@@ -77,4 +96,4 @@ entries:
     urls:
     - hertzbeat-1.4.0.tgz
     version: 1.4.0
-generated: "2023-12-11T14:28:59.141685+08:00"
+generated: "2024-01-12T10:43:44.090548+08:00"
