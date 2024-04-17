@@ -21,7 +21,7 @@ spec:
                   number: 1157
   tls:
     {{- if .Values.expose.ingress.tls.enabled }}
-    - secretName: {{ .Values.expose.ingress.tls.secretName }}
+    - secretName: {{ .Values.expose.ingress.tls.tls.secretName }}
       hosts:
         - {{ .Values.expose.ingress.host }}
     {{- end }}

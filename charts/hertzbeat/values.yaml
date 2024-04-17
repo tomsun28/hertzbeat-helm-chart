@@ -123,4 +123,4 @@ expose:
     tls:
       enabled: false
       tls:
-        - secretName: your-tls-secret 
+        secretName: your-tls-secret
