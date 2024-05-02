@@ -1,3 +1,20 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -120,7 +137,7 @@ data:
           rpc-port: 6667
           username: root
           password: root
-          # org.dromara.hertzbeat.warehouse.config.IotDbVersion: V_0_13 || V_1_0
+          # org.apache.hertzbeat.warehouse.config.IotDbVersion: V_0_13 || V_1_0
           version: V_1_0
           query-timeout-in-ms: -1
           # 数据存储时间：默认'7776000000'（90天,单位为毫秒,-1代表永不过期）
@@ -197,8 +214,6 @@ data:
       - /api/status/page/**===put===[admin,user]
       - /api/status/page/**===delete===[admin]
 
-    # 需要被过滤保护的资源,不认证鉴权直接访问
-    # /api/v1/source3===get 表示 /api/v1/source3===get 可以被任何人访问 无需登录认证鉴权
     excludedResource:
       - /api/alerts/report/**===*
       - /api/account/auth/**===*
@@ -206,7 +221,6 @@ data:
       - /api/apps/hierarchy===get
       - /api/push/**===*
       - /api/status/page/public/**===*
-      # web ui 前端静态资源
       - /===get
       - /dashboard/**===get
       - /monitors/**===get
@@ -227,18 +241,15 @@ data:
       - /**/*.json===get
       - /**/*.woff===get
       - /**/*.eot===get
-      # swagger ui 资源
       - /swagger-resources/**===get
       - /v2/api-docs===get
       - /v3/api-docs===get
-      # h2 database
       - /h2-console/**===*
 
-    # 用户账户信息
-    # 下面有 admin tom lili 三个账户
-    # eg: admin 拥有[admin,user]角色,密码为hertzbeat
-    # eg: tom 拥有[user],密码为hertzbeat
-    # eg: lili 拥有[guest],明文密码为lili, 加盐密码为1A676730B0C7F54654B0E09184448289
+    # account info config
+    # eg: admin has role [admin,user], password is hertzbeat
+    # eg: tom has role [user], password is hertzbeat
+    # eg: lili has role [guest], plain password is lili, salt is 123, salted password is 1A676730B0C7F54654B0E09184448289
     account:
       - appId: {{ .Values.manager.account.username }}
         credential: {{ .Values.manager.account.password }}
@@ -250,9 +261,9 @@ data:
         credential: hertzbeat
         role: [guest]
       - appId: lili
-        # 注意 Digest认证不支持加盐加密的密码账户
-        # 加盐加密的密码，通过 MD5(password+salt)计算
-        # 此账户的原始密码为 lili
+        # credential = MD5(password + salt)
+        # plain password: lili
+        # attention: digest authentication does not support salted encrypted password accounts
         credential: 1A676730B0C7F54654B0E09184448289
         salt: 123
         role: [guest]

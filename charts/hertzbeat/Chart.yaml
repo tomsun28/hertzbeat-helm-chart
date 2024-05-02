@@ -1,15 +1,32 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
 apiVersion: v2
-name: hertzbeat
+name: HertzBeat
 description: An open-source, real-time monitoring system with custom monitoring, high performance cluster and agentless capabilities.
 type: application
-home: https://hertzbeat.com/
+home: https://hertzbeat.apache.org/
 sources:
-  - https://github.com/dromara/hertzbeat
+  - https://github.com/apache/hertzbeat
   - https://charts.hertzbeat.com
 maintainers:
   - name: tom
     email: tomsun28@outlook.com
-icon: https://raw.githubusercontent.com/dromara/hertzbeat/master/home/static/img/hertzbeat-logo.png
+icon: https://raw.githubusercontent.com/apache/hertzbeat/master/home/static/img/hertzbeat-logo.png
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
