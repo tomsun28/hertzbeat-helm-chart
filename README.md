@@ -36,7 +36,7 @@ This [Helm](https://github.com/kubernetes/helm) chart installs [HertzBeat](https
 ### Add Helm repository
 
 ```bash
-helm repo add hertzbeat https://charts.hertzbeat.com/
+helm repo add hertzbeat https://charts.hertzbeat.apache.org/
 helm repo update
 ```
 
@@ -160,11 +160,11 @@ The following table lists the configurable parameters of the HertzBeat chart and
 [helm]: https://helm.sh/
 
 
-### Build Pages
+### Release and Build Pages
 
 1. `helm package charts/* -d docs`
 2. `helm repo index docs`
-3. `commit and push change`
+3. `commit and pr change`
 
 
 ### Build Local
